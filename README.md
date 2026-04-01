@@ -5,8 +5,8 @@ No external libraries (such as HAL or standard peripheral libraries) are used. T
 
 ## 📂 Learning Path
 
-* [**01 - Button LED Mirror**](./01-Button-LED-Mirror/) : Direct I/O manipulation.
-* [**02 - Button Toggle**](./02-Button-Toggle/) : State logic, handling loop speed, and bit toggling.
+* [**01 - Blink LED**](./01-BareMetal-blink-F401RE/) : Direct I/O manipulation.
+* [**02 - Button Toggle**](./02-BareMetal-Button-Toggler-F401RE/) : State logic, handling loop speed, and bit toggling.
 
 ## 🛠️ Hardware & Environment
 * **Target Board:** STM32 Nucleo-F401RE
