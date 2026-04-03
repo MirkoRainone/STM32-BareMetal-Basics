@@ -8,7 +8,7 @@ No external libraries (such as HAL or standard peripheral libraries) are used. T
 * [**01 - Blink LED**](./01-BareMetal-blink-F401RE/) : Direct I/O manipulation.
 * [**02 - Button Toggle**](./02-BareMetal-Button-Toggler-F401RE/) : State logic, handling loop speed, and bit toggling.
 * [**03 - LED CHASER**](./03-BareMetal-LED-Chaser-F401RE/) :Dynamic logic using C loops and advanced bitwise operations.
-*[**04 - State Machine**](./04-BareMetal-ModeSelecto-F401RE/) :Bare-Metal LED Controller & State Machine
+* [**04 - State Machine**](./04-BareMetal-ModeSelecto-F401RE/) :Bare-Metal LED Controller & State Machine
 
 ## 🛠️ Hardware & Environment
 * **Target Board:** STM32 Nucleo-F401RE
