@@ -17,24 +17,9 @@
  */
 
 #include <stdint.h>
-void SystemInit(void) {} // Funzione vuota per far contento il compilatore
-int main(void);          // Diciamo al chip che esiste una funzione main pi� in basso
 
-// 1. Il chip si sveglia e corre subito qui dentro
-void Reset_Handler(void) {
-    SystemInit();
-    main();       // Lancia il tuo codice!
-    while(1);     // Se il main finisce, bloccati qui per sicurezza
-}
-
-// 2. La Mappa (Vector Table) che il chip legge all'accensione
-__attribute__((used, section("RESET"))) 
-const void * __Vectors[] = {
-    (void *)0x20018000,   // Indirizzo di fine RAM (dove inizia la memoria Stack)
-    (void *)Reset_Handler // Indirizzo del nostro motore di avvio
-};
 #define RCC_AHB1ENR (*(volatile uint32_t *)0x40023830)
-#define GPIOA_MODER (*(volatile uint32_t *)0x400200000)
+#define GPIOA_MODER (*(volatile uint32_t *)0x40020000)
 #define GPIOA_ODR (*(volatile uint32_t *)0x400200014)
 #define GPIOA_IDR (*(volatile uint32_t *)0x400200010)
 
